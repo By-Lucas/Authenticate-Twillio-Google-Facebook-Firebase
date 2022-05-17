@@ -1,0 +1,93 @@
+.a_btn{
+    text-decoration: none;
+}
+.a_btn:hover{
+    text-decoration: none;
+}
+/* = = = = TWILIO = = = = */
+.fundo-twilio{
+    background-image: url(/static/medias/bg-twilio.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    max-width: 230px;
+    max-height: 230px;
+}
+.fundo-twilio:hover{
+    box-shadow: 2px 7px  25px rgb(240, 124, 124);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+
+}
+
+/* = = = = GOOGLE = = = = */
+.fundo-google{
+    background-image: url(/static/medias/bg-google.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    max-width: 230px;
+    max-height: 230px;
+}
+.fundo-google:hover{
+    box-shadow: 2px 7px 25px rgb(58, 158, 55);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+
+/* = = = = FACEBOOK = = = = */
+.fundo-facebook{
+    background-image: url(/static/medias/bg-facebook.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    max-width: 230px;
+    max-height: 230px;
+}
+.fundo-facebook:hover{
+    box-shadow: 2px 7px 25px rgb(225, 92, 252);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+
+/* = = = = FIREBASE = = = = */
+.fundo-firebase{
+    background-image: url(/static/medias/bg-firebase.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    max-width: 230px;
+    max-height: 230px;
+    min-width: 230px;
+    min-height: 230px;
+}
+.fundo-firebase:hover{
+    box-shadow: 2px 7px  25px rgb(240, 182, 56);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.05);
+}
+/*=========================================================*/

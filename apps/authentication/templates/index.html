@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load bootstrap %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock head %}
+
+{% block content %}
+<div class="container">
+    <div style="align-items: center; display:flex; justify-content: center;">
+        {{ message }}
+        <br>
+        {% if messages %}
+            {% for message in messages %}
+                <div class=" col-md-6 alert {{message.tags}} alert-dismissible fade show" style="display:flex; justify-content: center;">
+                    {{message}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    
+    <h1>PAGINA PRINCIPAL</h1>
+    <h2>Fazer com qual plataforma deseja fazer login?</h2><br>
+    <div class="row">
+        {% if request.user.is_authenticated %}
+            <a href="{% url 'logout' %}" class="btn btn-danger col-md-2">Logout</a>
+        {% else %}
+        <div class="col-sm" >
+            <a href="{% url 'login-view' %}">
+                <img src="{% static 'medias/twilio.png' %}" class="fundo-twilio a_btn" alt="">
+            </a>
+        </div>
+        <div class="col-sm" >
+            <a href="{% url 'login-view' %}">
+                <img src="{% static 'medias/google.png' %}" class="fundo-google a_btn" alt="">
+            </a>
+        </div>
+        <div class="col-sm" >
+            <a href="{% url 'login-view' %}">
+                <img src="{% static 'medias/facebook.png' %}" class="fundo-facebook a_btn" alt="">
+            </a>
+        </div>
+        <div class="col-sm" >
+            <a href="{% url 'login-view' %}">
+                <img src="{% static 'medias/firebase.png' %}"  class="fundo-firebase a_btn" alt="">
+            </a>
+        </div>
+        {% endif %}
+    </div>
+
+</div>
+{% endblock content %}

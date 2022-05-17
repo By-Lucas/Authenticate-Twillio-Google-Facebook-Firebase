@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load bootstrap %}
+
+{% block head %}{% endblock head %}
+
+{% block content %}
+<div class="container" >
+    <div class="row">
+        <div class="col-md-6">
+            <form action="" method="POST" autocomplete="off">
+                <h1>LOGIN-IN</h1>
+                {% csrf_token %}
+                {{form | bootstrap}}
+                <button class="btn btn-success col-md-3" type="submit">Verify</button>
+                <a href="{% url 'home-view' %}" class="btn btn-primary col-md-3">Home</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
